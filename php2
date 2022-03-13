@@ -80,9 +80,9 @@ if($c>$b && $c>$a)
    }
    else
    {
-   printf("%f",$a);
-   echo " ";
    printf("%f",$b);
+   echo " ";
+   printf("%f",$a);
    echo " ";
    printf("%f",$c);
    echo "\n";
@@ -94,3 +94,4 @@ if($c>$b && $c>$a)
    }
 }
 ?>
+
