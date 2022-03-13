@@ -1,0 +1,96 @@
+<?php
+fscanf(STDIN, "%f %f %f" , $a, $b, $c);
+if($a>$b && $a>$c)
+{
+   if($b>$c)
+   {
+   printf("%f",$c);
+   echo " ";
+   printf("%f",$b);
+   echo " ";
+   printf("%f",$a);
+   echo "\n";
+   printf("%f",$a);
+   echo " ";
+   printf("%f",$b);
+   echo " ";
+   printf("%f",$c);
+   }
+   else
+   {
+   printf("%f",$b);
+   echo " ";
+   printf("%f",$c);
+   echo " ";
+   printf("%f",$a);
+   echo "\n";
+   printf("%f",$a);
+   echo " ";
+   printf("%f",$c);
+   echo " ";
+   printf("%f",$b);
+  }
+}
+if($b>$a && $b>$c)
+{
+   if($a>$c)
+   {
+   printf("%f",$c);
+   echo " ";
+   printf("%f",$a);
+   echo " ";
+   printf("%f",$b);
+   echo "\n";
+   printf("%f",$b);
+   echo " ";
+   printf("%f",$a);
+   echo " ";
+   printf("%f",$c);
+   }
+   else
+   {
+   printf("%f",$a);
+   echo " ";
+   printf("%f",$c);
+   echo " ";
+   printf("%f",$b);
+   echo "\n";
+   printf("%f",$b);
+   echo " ";
+   printf("%f",$c);
+   echo " ";
+   printf("%f",$a);
+   }
+}
+if($c>$b && $c>$a)    
+{
+   if($b>$a)
+   {
+   printf("%f",$a);
+   echo " ";
+   printf("%f",$b);
+   echo " ";
+   printf("%f",$c);
+   echo "\n";
+   printf("%f",$c);
+   echo " ";
+   printf("%f",$b);
+   echo " ";
+   printf("%f",$a);
+   }
+   else
+   {
+   printf("%f",$a);
+   echo " ";
+   printf("%f",$b);
+   echo " ";
+   printf("%f",$c);
+   echo "\n";
+   printf("%f",$c);
+   echo " ";
+   printf("%f",$a);
+   echo " ";
+   printf("%f",$b);
+   }
+}
+?>
