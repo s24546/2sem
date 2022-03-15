@@ -1,0 +1,30 @@
+KLASA MY CIRCLE:
+package pl.pjatk.poj.projekt2;
+
+public class MyCircle {
+    int radius;
+
+    public MyCircle(int radius) {
+        this.radius = radius;
+    }
+    public double obwod() {
+        return Math.PI * (2 * radius);
+    }
+    public double pole() {
+        return Math.PI * Math.pow(radius,2);
+    }
+    public double srednica() {
+        return (2 * radius);
+    }
+}
+KLASA ZADANIE 4:
+package pl.pjatk.poj.projekt2;
+
+public class Zadanie4 {
+    public static void main(String[] args) {
+        MyCircle MyCircle = new MyCircle(4);
+        System.out.println(MyCircle.obwod());
+        System.out.println(MyCircle.pole());
+        System.out.println(MyCircle.srednica());
+    }
+}
