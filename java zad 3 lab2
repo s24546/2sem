@@ -1,0 +1,44 @@
+KLASA PUNKT:
+package pl.pjatk.poj.projekt2;
+
+public class punkt {
+    int x, y;
+
+    public punkt() {
+    //konstruktor bezargumentowy tworzący punkt w koordynatach (0,0)
+    }
+
+    public punkt(int x, int y) {
+        this.x = x;
+        this.y = y;
+    //konstruktor pozwalający stworzyć punkt o określonych koordynatach
+    }
+
+    public void wyswietl() {
+        System.out.printf("(%d, %d)\n", x,y);
+
+    }
+    public double obliczOdlegloscOd(int x, int y){
+        int a = Math.abs(this.x-x);
+        int b = Math.abs(this.y-y);
+        return Math.sqrt(a*a+b*b);
+        //metodę pozwalającą na obliczenie odległości między tym punktem a innym punktempodanym jako x i y
+    }
+    public double obliczOdlegloscOd(punkt inny){
+        return obliczOdlegloscOd(inny.x, inny.y);
+    }
+}
+KLASA ZADANIE 3:
+package pl.pjatk.poj.projekt2;
+
+public class Zadanie3 {
+    public static void main(String[] args){
+        punkt punkt = new punkt(2,2);
+        punkt zero = new punkt();
+        zero.wyswietl();
+
+        System.out.println(punkt.obliczOdlegloscOd(zero));
+        System.out.println(punkt.obliczOdlegloscOd(zero));
+    }
+}
+
