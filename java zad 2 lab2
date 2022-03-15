@@ -1,0 +1,31 @@
+JEDNA KLASA KWADRAT:
+package pl.pjatk.poj.projekt2;
+
+public class kwadrat {
+  int bok;
+  int
+
+    public kwadrat(int bok) {
+        this.bok = bok;
+    }
+    public int pole(){
+      return bok*bok;
+    }
+    public int obwód(){
+      return 4*bok;
+    }
+
+
+}
+DRUGA KLASA ZADANIE 2:
+package pl.pjatk.poj.projekt2;
+
+import java.awt.event.KeyAdapter;
+
+public class Zadanie2 {
+    public static void main(String[] args){
+        kwadrat kwadrat = new kwadrat(10);
+        System.out.println(kwadrat.pole());
+        System.out.println(kwadrat.obwód());
+    }
+}
