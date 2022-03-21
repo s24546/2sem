@@ -1,0 +1,66 @@
+package com.company;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+
+    public static int MIN(int[] tab) {
+        return tab[0];
+    }
+
+    public static int MAX(int[] tab) {
+        return tab[tab.length - 1];
+    }
+
+    public static int SUM(int[] tab) {
+        int sum = 0;
+        for (int i = 0; i < tab.length; i++) {
+            sum += tab[i];
+        }
+        System.out.println("sin");
+        return sum;
+    }
+
+    public static int AVE(int[] tab) {
+//        int s = SUM(tab);
+//        int ave = s / tab[tab.length];
+
+        return SUM(tab) / tab.length;
+    }
+
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int[] arr = new int[sc.nextInt()]; //4
+        arr[0] = sc.nextInt(); // 3  4 6 8
+        int f;
+
+        if (arr[0] % 2 == 0) {
+            f = arr[0] + 2;
+        } else {
+            f = arr[0] + 1;
+        }
+
+        for (int i = 1; i < arr.length; i++) {
+            arr[i] = f;
+            f = f + 2;
+        }
+
+        System.out.println(Arrays.toString(arr));
+        System.out.println(MIN(arr));
+        System.out.println(SUM(arr));
+
+        System.out.println(MAX(arr));
+
+        System.out.println(Average(arr));
+    }
+
+    public static double Average(int[] tab) {
+        int sum = 0;
+        for (int i = 0; i < tab.length; i++) {
+            sum += tab[i];
+        }
+        return sum / tab.length;
+    }
+}
