@@ -1,0 +1,11 @@
+<?php
+$t=readline();
+$k=readline();
+$T=strtolower($t);
+$K=strtolower($k);
+if (strpos($T,$K) !== false) {
+  echo "Słowo " . $k . " znajduje się w ciągu";
+}
+else{
+echo "Słowo " . $k . " nie znajduje się w ciągu";
+}
