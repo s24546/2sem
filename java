@@ -18,8 +18,4 @@ public class Main {
         }
     }
 }
-//System.out.println("Podaj temperature");
-    //Scanner scanner = new Scanner(System.in);
-    //int x = scanner.nextInt();
-    //double y = 1.8;
-    //System.out.println(x*y+32);
+
