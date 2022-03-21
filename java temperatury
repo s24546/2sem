@@ -1,0 +1,16 @@
+package com.company;                                         
+                                                             
+import java.util.Scanner;                                    
+                                                             
+public class zadania {                                       
+                                                             
+    public static void main(String[] args) {                 
+        System.out.println("Podaj temperature \n");          
+        Scanner scanner = new Scanner(System.in);            
+        int x = scanner.nextInt();                           
+        double y = 1.8;                                      
+        System.out.println(x*y+32);                          
+                                                             
+    }                                                        
+}                                                            
+                                                             
