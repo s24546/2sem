@@ -1,0 +1,29 @@
+package com.Zadania;
+
+import java.util.Random;
+
+public class Zawodnik {
+
+    private int predkoscMin;
+    private int predkoscMax;
+    private double pokonanaOdleglosc;
+    private String imie;
+    private int odleglosc;
+
+    public Zawodnik(int predkoscMin, int predkoscMax, String imie) {
+        this.predkoscMin = predkoscMin;
+        this.predkoscMax = predkoscMax;
+        this.pokonanaOdleglosc = 0;
+        this.imie = imie;
+    }
+
+    public void przedstawSie() {
+        System.out.printf(" Jestem " + imie + " biegam z prędkością " + predkoscMin + " - " + predkoscMax);
+    }
+    public void biegnij() {
+        
+        Random random= new Random();
+        int x = random.nextInt(predkoscMax+1-predkoscMin)+predkoscMin;
+        pokonanaOdleglosc+=x;
+    }
+}
