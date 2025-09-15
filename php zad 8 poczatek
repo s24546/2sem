@@ -1,5 +1,0 @@
-<?php
-$t=readline();
-$r=readline();
-$a=str_split($t);
-$b=str_split($r);
